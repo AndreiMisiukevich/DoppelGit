@@ -37,7 +37,7 @@ DoppelGit uses the **active identity’s PAT** for all GitHub API calls it makes
    - Optional: color/icon/notes if supported by your UI.
 4. Click **Save**.
 
-Free: **1 identity**. Pro: **unlimited identities**.
+There is no hard-coded limit on how many identities you can configure; the subscription (and 7-day free trial) are intended to support **unlimited identities** within reasonable, non-abusive use.
 
 ---
 
@@ -140,13 +140,13 @@ Common use cases:
 
 ---
 
-## 3. Encryption & lock behavior (Pro)
+## 3. Encryption & lock behavior
 
-> Encryption features are available on the **Pro plan ($5/month or $49/year)**.
+> Encryption features are included with the **subscription ($5/month or $49/year)** and are available during the **7-day free trial**.
 
 ### 3.1 Enabling encryption
 
-1. Upgrade to **Pro** (via the extension’s purchase / licensing flow).  
+1. Start a **subscription** (or free trial) via the extension’s purchase / licensing flow.  
 2. Open the DoppelGit **settings / options page**.  
 3. Look for **“Encryption”** or **“Protect tokens with passphrase”**.  
 4. Choose a strong **passphrase** you can remember.  
@@ -297,7 +297,7 @@ Setup:
 
 - Identity 1: `Client A – Dev`  
 - Identity 2: `Client B – Dev`  
-- Identity 3 (Pro): `Agency Bot` for templated comments and status updates.  
+- Identity 3: `Agency Bot` for templated comments and status updates.  
 
 Workflow:
 
@@ -330,7 +330,7 @@ This keeps noisy automation separate from your main account.
 
 ## 6. Screenshot reference / placeholders
 
-You can add screenshots under `docs/images/` and reference them here:
+In your GitHub repo, you can add screenshots under `docs/images/` and reference them here:
 
 - Identities list:
 
@@ -347,4 +347,7 @@ You can add screenshots under `docs/images/` and reference them here:
 - PR flow example:
 
   `![Creating a PR with DoppelGit](./images/pr-flow.png)`
+
+Replace these placeholders with real screenshots for your public documentation.
+
 

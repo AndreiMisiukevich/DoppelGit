@@ -7,7 +7,7 @@ This document explains how DoppelGit handles your data, with a focus on:
 - How (and if) analytics are collected  
 - How encryption and browser security interact  
 
-> This is a technical overview intended for developers; organizations may maintain their own formal legal or compliance policy in addition to this document.
+> This is a technical overview intended for developers. For legal or compliance use, adapt and extend this into a formal policy as needed.
 
 ---
 
@@ -41,9 +41,9 @@ All of this is stored in **browser extension storage** (e.g. `chrome.storage.loc
 
 If your browser supports syncing some extension data, that behavior is controlled by the browser, not by DoppelGit.
 
-### 2.2 Encryption (Pro plan)
+### 2.2 Encryption (subscription)
 
-On the **Pro plan ($5/month or $49/year)**, DoppelGit can encrypt sensitive data at rest:
+With the **subscription ($5/month or $49/year)** – and during the **7-day free trial** – DoppelGit can encrypt sensitive data at rest:
 
 - Uses **AES-GCM** in the browser.  
 - Encryption key derived from your **passphrase**.  
@@ -72,7 +72,7 @@ No intermediate server:
 
 ### 3.2 Licensing / payments (if applicable)
 
-If the Pro plan is sold via a payment provider or extension monetization platform:
+If the subscription is sold via a payment provider or extension monetization platform:
 
 - A minimal set of data may be exchanged with that provider:
   - License identifiers,  
@@ -187,7 +187,7 @@ For maximum safety:
 
 ## 8. Screenshot placeholders
 
-Recommended screenshots for a public-facing privacy page:
+Recommended screenshots for a public-facing privacy page (placeholders):
 
 - Identity storage explanation:
 
@@ -196,4 +196,7 @@ Recommended screenshots for a public-facing privacy page:
 - Encryption and privacy settings:
 
   `![Privacy and encryption options](./images/privacy-encryption.png)`
+
+Replace these placeholders with real screenshots before publishing.
+
 

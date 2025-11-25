@@ -4,7 +4,7 @@ Security is a core design goal for DoppelGit. This document explains:
 
 - What data DoppelGit stores and where  
 - How **chrome.storage.local** is used  
-- How optional **passphrase-based encryption** with **AES-GCM** works (Pro)  
+- How optional **passphrase-based encryption** with **AES-GCM** works (subscription feature)  
 - Why Personal Access Tokens (PATs) remain on your device  
 - Threat model and recommended safe practices  
 
@@ -35,9 +35,9 @@ Stored data typically includes:
 
 ---
 
-### 1.2 Optional encryption (Pro plan)
+### 1.2 Optional encryption (subscription)
 
-On the **Pro plan ($5/month or $49/year)**, DoppelGit can encrypt sensitive information at rest using **AES-GCM** in the browser.
+With the **subscription ($5/month or $49/year)** – and during the **7-day free trial** – DoppelGit can encrypt sensitive information at rest using **AES-GCM** in the browser.
 
 - A **passphrase** is provided by you.  
 - An encryption key is derived from that passphrase using a suitable key-derivation function (e.g. PBKDF2, scrypt, or similar – see implementation).  
@@ -167,7 +167,7 @@ Before relying on DoppelGit for sensitive work:
    - No external endpoints receive PATs.  
    - Encryption is implemented as described, if you rely on it.  
 3. Use **fine-grained PATs** with minimal repository permissions.  
-4. Consider enabling **encryption (Pro)** if:
+4. Consider enabling **encryption (available with the subscription)** if:
    - You work with high-value repos, or  
    - You share your machine, or  
    - You want extra protection for at-rest data.  
@@ -194,4 +194,7 @@ You can add security-related illustrations under `docs/images/`:
 - Lock screen:
 
   `![Locked state / passphrase prompt](./images/locked-state.png)`
+
+Replace these with real screenshots in your public repository.
+
 

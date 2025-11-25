@@ -31,7 +31,7 @@ DoppelGit is designed with a **local-first** and **transparent** security model:
 - PATs are stored in **`chrome.storage.local`** in your browser profile.  
 - PATs are **never sent to a third-party server** operated by DoppelGit.  
 - GitHub API requests go **directly from your browser to `api.github.com`**.  
-- On the **Pro plan**, you can enable **local AES-GCM encryption** with a passphrase, so PATs are encrypted at rest.
+- With the **subscription** (and during the **7-day free trial**), you can enable **local AES-GCM encryption** with a passphrase, so PATs are encrypted at rest.
 
 However, no tool can be “absolutely safe”:
 
@@ -108,7 +108,7 @@ If in doubt:
 - Consider using:
   - Dedicated work-specific PATs,  
   - Fine-grained tokens,  
-  - The Pro encryption feature for local protection.
+  - The subscription’s encryption feature for local protection.
 
 ---
 
@@ -170,41 +170,24 @@ Your options:
 
 - Check the **GitHub repo issues** for known problems or fixes.  
 - Temporarily disable or remove the extension if needed.  
-- As a Pro user, you can continue to **revoke PATs** in GitHub if you no longer trust the extension.
+- You can always **revoke PATs** in GitHub directly if you no longer trust the extension or your environment.
 
 The extension being broken does **not** automatically revoke your tokens; you manage them directly in GitHub.
 
 ---
 
-### What’s the difference between Free and Pro?
+### How does pricing work?
 
-**Free plan**
-
-- **Price:** $0  
-- **Identities:** 1  
-- **Actions/day:** 50 actions per day  
-- **Encryption:** Not available  
-- **Support:** Basic (best-effort GitHub issues)  
-
-Best for:
-
-- Trying DoppelGit.  
-- Simple one-off alternate identity usage.  
-
-**Pro plan**
+DoppelGit has a **single subscription** with a **7-day free trial**:
 
 - **Price:** **$5/month** or **$49/year**  
-- **Identities:** Unlimited  
-- **Actions/day:** Unlimited (within GitHub’s rate limits and TOS)  
-- **Encryption:** Local encryption with AES-GCM, passphrase-based  
-- **Support:** Priority support  
-- **Extras:** Early access to automation features and more customization options  
+- **Trial:** **7-day free trial** with full feature access  
+- **Identities:** **Unlimited** (within reasonable usage)  
+- **Actions/day:** No artificial per-day limits; usage is still subject to GitHub’s rate limits and Terms of Service.  
+- **Encryption:** Local encryption with AES-GCM, passphrase-based, included in the subscription (and available during the trial).  
+- **Support & extras:** Priority support and early access to new automation and customization features.  
 
-Best for:
-
-- Consultants, agencies, and teams.  
-- Heavy multi-identity users (work, personal, client, bot).  
-- Users with elevated security needs who want local encryption.
+This model is intended to be simple: one subscription, one full feature set, with a short trial so you can decide if DoppelGit fits your workflow.
 
 ---
 

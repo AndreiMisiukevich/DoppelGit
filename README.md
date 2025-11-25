@@ -39,29 +39,23 @@ All configuration (including PATs) is stored **locally in your browser**. Tokens
 
 ## Pricing
 
-DoppelGit has a **Free** tier for simple setups and a **Pro** tier for heavy users.
+DoppelGit is offered as a **single subscription** with a **7-day free trial**.
 
-An **action** is a single GitHub operation triggered via DoppelGit (for example, creating a pull request, opening an issue, or posting a comment).
+An **action** is a single GitHub operation triggered via DoppelGit (for example, creating a pull request, opening an issue, or posting a comment). There are **no artificial per-day limits** on actions; usage is still subject to GitHub’s own rate limits and policies.
 
-### Plans
+### Subscription
 
-| Plan     | Price                | Identities       | Actions/day    | Encryption | Support           | Extras                                             |
-|---------|----------------------|------------------|----------------|-----------|-------------------|---------------------------------------------------|
-| **Free** | **$0**               | 1 identity       | 50 actions/day | No        | Basic             | Core identity switching & GitHub actions          |
-| **Pro** | **$5/month** or **$49/year** | Unlimited identities | Unlimited     | Yes       | Priority support | Early access to automation + more customization   |
-
-- **Free**
-  - Great for trying DoppelGit or running a single “alternate” identity.
-  - No encryption features.
-- **Pro**
-  - For power users, consultants, agencies, and OSS maintainers.
-  - Enables **local encryption**, removes action limits, and unlocks advanced features as they ship.
+- **Price**: **$5/month** or **$49/year**
+- **Trial**: **7-day free trial** with full feature access
+- **Identities**: **Unlimited** (within reasonable usage)
+- **Encryption**: Optional local encryption of PATs
+- **Support**: Priority support and early access to new features
 
 ---
 
 ## Screenshots
 
-> These are example screenshot paths for this repository.
+> These are placeholders – replace with real screenshots in your repo.
 
 - **Identities overview**
 
@@ -146,10 +140,7 @@ All actions triggered via DoppelGit will use that identity’s PAT.
 2. Enter:
    - **Display name** – how you’ll recognize this identity.
    - **PAT** – paste your GitHub Personal Access Token.
-3. Choose the **plan**:
-   - Free: you can have **1 identity**.
-   - Pro: you can add **unlimited identities**.
-4. Save the identity.
+3. Save the identity.
 
 #### Recommended PAT scopes
 
@@ -207,7 +198,7 @@ This is ideal for:
 - **Local storage only**
   - Identities and PATs are stored in `chrome.storage.local` in your browser profile.
   - Data is never sent to any external server operated by DoppelGit.
-- **Optional encryption (Pro)**
+- **Optional encryption (subscription feature)**
   - When enabled, DoppelGit encrypts sensitive data (e.g. PATs) using **AES-GCM**.
   - The encryption key is derived from a **passphrase** you choose.
   - Decryption only happens locally when you unlock DoppelGit.
@@ -242,7 +233,7 @@ See the roadmap in [`docs/ROADMAP.md`](./docs/ROADMAP.md).
 ## FAQ (short version)
 
 **Q: Is this safe to use?**  
-**A:** DoppelGit is designed with a **local-first** security model: PATs stay in `chrome.storage.local`, and all requests go directly to GitHub. With Pro, you can additionally encrypt PATs using AES-GCM with a passphrase. You are still responsible for generating, scoping, and revoking your tokens.
+**A:** DoppelGit is designed with a **local-first** security model: PATs stay in `chrome.storage.local`, and all requests go directly to GitHub. With the subscription (and during the 7-day trial), you can additionally encrypt PATs using AES-GCM with a passphrase. You are still responsible for generating, scoping, and revoking your tokens.
 
 **Q: Does this violate GitHub’s Terms of Service?**  
 **A:** DoppelGit uses GitHub’s official APIs via your PATs, similar to any other client. You should always comply with GitHub’s Terms, Acceptable Use, and rate limits. Using multiple identities is common for maintainers, bot accounts, and work vs. personal accounts.
@@ -250,8 +241,8 @@ See the roadmap in [`docs/ROADMAP.md`](./docs/ROADMAP.md).
 **Q: Will GitHub block me?**  
 **A:** GitHub may rate-limit or restrict accounts that abuse the API or violate their policies. DoppelGit does not attempt to evade rate limits. Use reasonable PAT scopes and avoid spammy activity.
 
-**Q: What’s the difference between Free and Pro?**  
-**A:** Free gives you **1 identity**, **50 actions/day**, and no encryption. Pro unlocks **unlimited identities**, **unlimited actions**, **local encryption**, priority support, and early access to automation and customization features.
+**Q: How does pricing work?**  
+**A:** DoppelGit is available as a single subscription for **$5/month** or **$49/year**, with a **7-day free trial** that includes all features (including local encryption). An active subscription is required to keep using DoppelGit after the trial ends.
 
 For the full FAQ, see [`docs/FAQ.md`](./docs/FAQ.md).
 
@@ -314,9 +305,11 @@ See [`docs/CONTRIBUTING.md`](./docs/CONTRIBUTING.md) for:
 
 ## License
 
-**DoppelGit is proprietary software.**  
-All rights reserved.  
-Unauthorized copying, modification, or distribution of this code or extension is prohibited except as explicitly permitted by the author or a separate commercial agreement.
+Specify your license here, for example:
+
+> MIT License – see [`LICENSE`](./LICENSE) for details.
+
+(Update this section to match the actual license used by the project.)
 
 ---
 
